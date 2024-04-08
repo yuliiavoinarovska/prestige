@@ -1,0 +1,156 @@
+.modal {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(30, 33, 44, 0.75);
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.6s ease-in-out;
+
+	&--show {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&--hide {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.contacts-form {
+	padding: 5rem;
+	width: 50rem;
+	position: relative;
+	background-color: $color-grey-light-1;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	&__close {
+		position: absolute;
+		border: none;
+		border-radius: 0;
+		background: transparent;
+		top: 2.4rem;
+		right: 2.4rem;
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+		
+		svg {
+			fill: $color-primary-dark;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__heading {
+		text-align: center;
+		
+	}
+
+	&__caption {
+		margin-bottom: 1rem;
+		color: $color-secondary;
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+	&__input {
+		width: 100%;
+		height: 4.6rem;
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+		border: 1px solid $color-grey-light-2;
+		background: $color-grey-light-1;
+		color: $color-secondary;
+		font-size: 1.6rem;
+		font-weight: 400;
+
+		&::placeholder {
+			color: $color-grey-light-2;
+		}
+
+		&:focus {
+			outline: 2px solid $color-primary-dark;
+			outline-offset: 2px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+	}
+
+	@media only screen and (max-width: $bp-mobile) {
+		width: 90%;
+		padding: 44px 16px;
+	}
+}
+
+
+.custom-checkbox {
+	position: relative;
+	margin-bottom: 2rem;
+
+	&__input {
+		appearance: none;
+		position: absolute;
+	}
+
+	&__text {
+		display: inline-block;
+		position: relative;
+		padding-left: 28px;
+		color: $color-grey-dark-1;
+		font-size: 1.4rem;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 4px;
+			left: 0;
+			border: 1px solid $color-grey-dark-1;
+			border-radius: 2px;
+			width: 1.6rem;
+			height: 1.6rem;
+			box-sizing: border-box;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 4px;
+			left: 0;
+			width: 1.6rem;
+			height: 1.6rem;
+			box-sizing: border-box;
+			border-radius: 2px;
+			background-image: url("../icons/check.svg");
+			background-color: $color-primary;
+			background-position: center;
+			background-size: 1rem 1rem;
+			background-repeat: no-repeat;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+	}
+
+	.custom-checkbox__input:checked + .custom-checkbox__text::after {
+		opacity: 1;
+	}
+	
+	.custom-checkbox__input:disabled + .custom-checkbox__text {
+		opacity: 0.4;
+		pointer-events: none;
+	}
+}
+
+
