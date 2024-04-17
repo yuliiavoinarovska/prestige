@@ -1,19 +1,20 @@
-# Landing page компанії по продажу елітної нерухомості <a href="https://yuliiavoinarovska.github.io/prestige/" target="_blank">“Prestige”</a>
-> Проект виконано в рамках навчання. 
 
-## Опис проекту
-Основна ціль проекту — практичне використання всіх можливостей `CSS Grid` для побудови як всього макету сторінки, так і для невеликих компонентів.
-В поєднанні з використанням `rem`, `vw` та `vh` а також адаптивної типографіки (використання `css-функції clamp`) вдалося реалізувати практично гумовий адаптив з використанням невеликої кількості змін в стилях під певні медіа-запити. 
 
-### Технології та методології:
+# Landing page of the luxury real estate company "Prestige"
+### <a href="https://yuliiavoinarovska.github.io/prestige/" target="_blank">Visit Website</a>  
+> The project was created as part of the learning process.
+
+## Project Description
+The main goal of the project was to practically utilize all the capabilities of `CSS Grid` for building the entire layout of the page and small components.
+In combination with the use of `rem`, `vw`, and `vh`, as well as adaptive typography (utilizing the `css-function (clamp)`), it was possible to implement a practically fluid responsive design with minimal style changes for specific media queries.
+
+### Technologies and Methodologies:
 * HTML, CSS, JS
-* Методологія БЕМ
-* Препроцессор SASS в синтаксисі SCSS
+* BEM Methodology
+* SASS Preprocessor
 * CSS Grid, Flexbox
-* Gulp 
+* Gulp
 
-### Самостійно допрацьовано:
-1. Верстка модального вікна з формою зворотнього звʼязку
-2. Написання скриптів для модальних вікон
-3. Верстка бургер-меню та написання скриптів для нього
-
+### Independently developed features (including creating the markup, styles, and scripts):
+1. Modal window with feedback form
+2. Burger menu
