@@ -19,6 +19,7 @@
         height: 4.5rem;
         grid-row: 1 / span 2;
         transform: translateY(-1rem);
+        transition: all .3s ease-out;
     }
 
     &__text {
